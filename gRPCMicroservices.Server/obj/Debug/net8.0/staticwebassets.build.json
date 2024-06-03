@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4OArJZkl70x6uX9dX+3j6pqv/6HennOhy/t7YY/y0a4=",
+  "Source": "gRPCMicroservices.Server",
+  "BasePath": "_content/gRPCMicroservices.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

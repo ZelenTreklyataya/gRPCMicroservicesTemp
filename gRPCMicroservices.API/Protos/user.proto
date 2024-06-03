@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPCMicroservices.API";
+
+service User {
+  rpc GetUserById (GetUserRequest) returns (GetUserResponse);
+  rpc GetAllUsers (GetAllUsersRequest) returns (GetAllUsersResponse);
+  rpc CreateUser (CreateUserRequest) returns (CreateUserResponse);
+}
+
+message GetUserRequest {
+  string id = 1;
+}
+message GetUserResponse{
+  string Email = 1;
+  string Name = 2;
+  string LastName = 3;
+  string SubName = 4;
+}
+
+message GetAllUsersRequest
+{
+
+}
+message GetAllUsersResponse
+{
+  repeated GetUserResponse user = 1;
+}
+
+message CreateUserRequest
+{
+  string Email = 1;
+  string Name = 2;
+  string LastName = 3;
+  string SubName = 4;
+}
+message  CreateUserResponse
+{
+  string id = 1;
+  string Email = 2;
+  string Name = 3;
+  string LastName = 4;
+  string SubName = 5;
+}
